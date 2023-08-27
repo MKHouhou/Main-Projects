@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="40.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="sample.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label fx:id="resultOfMove"/>
+    <Label fx:id="monsterHitPoints"/>
+    <Label fx:id="playerHitPoints"/>
+    <Label fx:id="monsterIndicator"/>
+    <Label fx:id="totalGold"/>
+    <Label fx:id="currentColumn" text="Current Column: 0"/>
+    <Label fx:id="currentRow" text="Current row: 0"/>
+    <Button text="move right" onAction="#moveRightCLick"/>
+    <Button text="move left" onAction="#moveLeftCLick"/>
+    <Button text="move up" onAction="#moveUpCLick"/>
+    <Button text="move down" onAction="#moveDownCLick"/>
+    <Button fx:id="fightButton" text="Fight" onAction="#fight"/>
+    <Button fx:id="saveButton" text="search room" onAction="#search"/>
+    <Button fx:id="run" text="run away" onAction="#run"/>
+    <Button fx:id="sleep" text="sleep" onAction="#sleep"/>
+</VBox>
+
